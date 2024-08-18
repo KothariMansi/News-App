@@ -28,7 +28,7 @@ fun SearchScreen(
             text = state.searchQuery,
             readOnly = false,
             onValueChange = { event(SearchEvent.UpdateSearchQuery(it)) }) {
-            event(SearchEvent.searchNews)
+            event(SearchEvent.SearchNews)
         }
         Spacer(modifier = Modifier.height(MediumPadding1))
         state.article?.let {
@@ -37,6 +37,5 @@ fun SearchScreen(
                 navigate(Route.DetainScreen.route)
             }
         }
-
     }
 }
