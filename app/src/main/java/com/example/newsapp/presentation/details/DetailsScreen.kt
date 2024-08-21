@@ -60,7 +60,7 @@ fun DetailsScreen(
                     }
                 }
             },
-            onBookmarkClick = { event(DetailsEvents.SaveArticle) },
+            onBookmarkClick = { event(DetailsEvents.UpsertDeleteArticle(article)) },
             onBackClick = { navigateUp() }
         )
 

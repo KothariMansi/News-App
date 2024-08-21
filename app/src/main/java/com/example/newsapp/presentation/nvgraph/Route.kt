@@ -7,7 +7,7 @@ sealed class Route(
     object HomeScreen: Route("homeScreen")
     object SearchScreen: Route("searchScreen")
     object BookmarkScreen: Route("bookmarkScreen")
-    object DetainScreen: Route("detailScreen")
+    object DetailScreen: Route("detailScreen")
 
     // Sub Navigation
     object AppStartNavigation: Route("AppStartNavigation")
